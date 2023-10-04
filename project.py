@@ -216,7 +216,7 @@ if c_id not in ch_ids:
         information.insert_one(data)
         st.success("successfully Uploaded to MongoDB !!", icon="✅")
 else:
-     st.write("Already Exixts")
+     st.write("## :red[Already Exists]")
 
 
 # FUNCTION TO GET CHANNEL NAMES FROM MONGODB
@@ -274,7 +274,7 @@ if s not in c:
             
         st.success("Successfully migrated to SQL !!", icon="✅")
 else:
-     st.write("Already Exists")
+     st.write("## :red[Already Exists]")
     
             
 
