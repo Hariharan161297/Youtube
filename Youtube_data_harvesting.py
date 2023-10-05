@@ -6,7 +6,7 @@ from pymongo import MongoClient
 import googleapiclient.discovery
 from googleapiclient.discovery import build
 import plotly.express as px
-import datetime as dt
+
 
 # BUILDING CONNECTION WITH YOUTUBE API
 api_key= "AIzaSyAskL7NKXofZkzpr24JDNgr9PfVpzaeexE"
