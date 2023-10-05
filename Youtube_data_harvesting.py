@@ -7,7 +7,6 @@ import googleapiclient.discovery
 from googleapiclient.discovery import build
 import plotly.express as px
 
-
 # BUILDING CONNECTION WITH YOUTUBE API
 api_key= "AIzaSyAskL7NKXofZkzpr24JDNgr9PfVpzaeexE"
 api_service_name = "youtube"
@@ -17,7 +16,7 @@ DEVELOPER_KEY = "AIzaSyAskL7NKXofZkzpr24JDNgr9PfVpzaeexE"
 youtube = googleapiclient.discovery.build(
         api_service_name, api_version, developerKey = DEVELOPER_KEY)
 
-# Bridging a connection with MongoDB and Creating a new database(youtube)
+# Bridging a connection with MongoDB and existing database(project)
 client = pymongo.MongoClient('mongodb://localhost:27017')  
 mydb = client["project"]
 information = mydb.youtube
