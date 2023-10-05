@@ -44,7 +44,7 @@ def youtube_data(channel_id):
     )
     response = request.execute()
     
-    for i in range(1):
+    for i in range(len(response["items"]):
         finalinfo=dict(channel_name=response["items"][i]["snippet"]["title"],
                        channel_id= response["items"][i]["id"],
                        channel_description=response["items"][i]["snippet"]["description"],
