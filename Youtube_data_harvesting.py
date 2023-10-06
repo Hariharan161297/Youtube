@@ -70,7 +70,6 @@ def youtube_playlist_data(channel_id):
     response = request.execute()
 
 
-
     for i in range(len(response["items"])):
         playlistinfo=dict(channel_id= response["items"][i]['snippet']['channelId'],
                           playlist_id = response["items"][i]['id'],
