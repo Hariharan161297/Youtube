@@ -144,8 +144,7 @@ def videodetails(all_video_ids):
         response = request.execute()
         
         for i in range(len(response["items"])):
-            videodata=dict(#playlist_id=p_id,
-                           channel_id = response['items'][i]['snippet']['channelId'],
+            videodata=dict(channel_id = response['items'][i]['snippet']['channelId'],
                            video_id = response["items"][i]["id"], 
                            video_name=response["items"][i]["snippet"]["title"],
                            video_description= response["items"][i]["snippet"]["description"],
