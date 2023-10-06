@@ -16,7 +16,7 @@ DEVELOPER_KEY = "AIzaSyAskL7NKXofZkzpr24JDNgr9PfVpzaeexE"
 youtube = googleapiclient.discovery.build(
         api_service_name, api_version, developerKey = DEVELOPER_KEY)
 
-# Bridging a connection with MongoDB and existing database(project)
+# Bridging a connection with MongoDB-existing database(project)
 client = pymongo.MongoClient('mongodb://localhost:27017')  
 mydb = client["project"]
 information = mydb.youtube
